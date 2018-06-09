@@ -1,0 +1,26 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,dl,dt,dd,b{padding:0;margin:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px;}
+li{list-style:none;}
+img{border:none;}
+a{color:#333;text-decoration:none;outline:none;}
+a:hover{color:#000;text-decoration:underline;}
+body{font-size:14px;font-family: 微软雅黑, Arial, Verdana, Helvetica, sans-serif; word-break:break-all;}
+div{overflow:hidden;}
+.box{margin:0 auto;text-align:left;width:1060px;}
+.clearFloat{clear:both;}
+@font-face {
+    font-family: 方正大标宋简体;
+    src:url("../font/FZDBSJW.eot") format("embedded-opentype");
+    src:url("../font/FZDBSJW.woff2") format("woff2"),
+        /*url("../font/FZDBSJW.woff") format("woff"),*/
+        url("../font/FZDBSJW.ttf") format("truetype"),
+        url("../font/FZDBSJW.eot#iefix") format("embedded-opentype");
+        /*url("../font/FZDBSJW.svg") format("svg"),*/
+        /*url("../font/FZDBSJW.otf") format("opentype");*/
+    font-weight: normal;
+    font-style: normal;
+}
+.big-title{font-family: 方正大标宋简体;
+font-size: 40px;
+color: #333333}
