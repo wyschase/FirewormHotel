@@ -22,23 +22,30 @@
 }
 
 html, body, .index-header {
-    height: 100%;
+    height: 800px;
 }
 
 .index-header-banner {
     width: 100%;
     height: 100%;
-    background-image: url("../images/search04.jpg");
-    background-size: cover;
+}
+
+.index-header-banner .pic{
+    position: relative;
+    z-index: 0;
 }
 
 .index-header-slogan {
+    position: relative;
+    z-index: 999;
     padding-left: 270px;
     margin-top: 319px;
     margin-bottom: 50px;
 }
 
 .index-header-search input {
+    position: relative;
+    z-index: 999;
     margin: 0 auto;
     width: 88%;
     height: 48px;
