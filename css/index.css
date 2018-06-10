@@ -185,8 +185,16 @@ html, body, .index-header {
 
 .index-footer .footer-content{
     font-size: 18px;
-    /*color: #999999;*/
+    color: #999999;
     margin-top: 60px;
+    position: relative;
+}
+
+.index-footer .footer-content ul{
+    display: block;
+    width: 475px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .index-footer .footer-content ul li{
