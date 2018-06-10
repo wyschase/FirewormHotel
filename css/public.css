@@ -1,0 +1,45 @@
+.comWidth {
+  width: 1000px;
+  margin: 0 auto;
+}
+ol, ul {
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+/*清除浮动*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+@font-face {
+    font-family: 方正大标宋简体;
+    src:url("../font/FZDBSJW.eot") format("embedded-opentype");
+    src:url("../font/FZDBSJW.woff2") format("woff2"),
+        /*url("../font/FZDBSJW.woff") format("woff"),*/
+        url("../font/FZDBSJW.ttf") format("truetype"),
+        url("../font/FZDBSJW.eot#iefix") format("embedded-opentype");
+        /*url("../font/FZDBSJW.svg") format("svg"),*/
+        /*url("../font/FZDBSJW.otf") format("opentype");*/
+    font-weight: normal;
+    font-style: normal;
+}
+.big-title{font-family: 方正大标宋简体;
+font-size: 60px;
+color: #52919f;}
