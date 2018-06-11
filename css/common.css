@@ -9,18 +9,38 @@ body{font-size:14px;font-family: 微软雅黑, Arial, Verdana, Helvetica, sans-s
 div{overflow:hidden;}
 .box{margin:0 auto;text-align:left;width:1060px;}
 .clearFloat{clear:both;}
-@font-face {
-    font-family: 方正大标宋简体;
-    src:url("../font/FZDBSJW.eot") format("embedded-opentype");
-    src:url("../font/FZDBSJW.woff2") format("woff2"),
-        /*url("../font/FZDBSJW.woff") format("woff"),*/
-        url("../font/FZDBSJW.ttf") format("truetype"),
-        url("../font/FZDBSJW.eot#iefix") format("embedded-opentype");
-        /*url("../font/FZDBSJW.svg") format("svg"),*/
-        /*url("../font/FZDBSJW.otf") format("opentype");*/
-    font-weight: normal;
-    font-style: normal;
+
+.public-footer{
+    width: 100%;
+    height: 240px;
+    background: #f6f6f6;
 }
-.big-title{font-family: 方正大标宋简体;
-font-size: 40px;
-color: #333333}
+
+.public-footer .footer-content{
+    font-size: 18px;
+    color: #999999;
+    margin-top: 60px;
+    position: relative;
+}
+
+.public-footer .footer-content ul{
+    display: block;
+    width: 475px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.public-footer .footer-content ul li{
+    float: left;
+}
+
+.public-footer .footer-content ul li a{
+    font-size: 18px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.public-footer .footer-content p{
+    text-align: center;
+    margin-top: 10px;
+}
