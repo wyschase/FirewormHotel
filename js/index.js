@@ -3,6 +3,18 @@ $(function () {
         id: 'header-banner'
     });
 
+    // 登录名-session
+    $.post("../php/session.php",
+        {
+        },
+        function (data, status) {
+            if(data!=""){
+                document.getElementById("text-login").innerHTML=data;
+                document.getElementById("text-register").innerHTML="注销";
+            }
+        });
+
+
     // sub-title鼠标悬停事件
     $(".sub-title li a").hover(
         function () {
