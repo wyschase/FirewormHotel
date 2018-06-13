@@ -25,8 +25,8 @@
         <div class="info">
             <img src="../images/注册.png" alt="注册">
         </div>
-        <form action="#">
-            <div class="form-group">
+        <form action="regcheck.php" method="post">
+        <div class="form-group">
                 <p>
                     <input type="text" placeholder="请输入用户名，不超过20字" class="form-input-user" name="username">
                 </p>
@@ -37,10 +37,10 @@
             </div>
             <div class="form-group">
 
-                <input type="password" placeholder="再次输入您的密码" class="form-input-password2" name="password">
+                <input type="password" placeholder="再次输入您的密码" class="form-input-password2" name="confirm">
             </div>
             <div class="btn">
-                <input type="submit" value="注&nbsp;&nbsp;册" class="form-btn">
+                <input type="submit" value="注&nbsp;&nbsp;册" class="form-btn" name="submit">
             </div>
         </form>
     </div>

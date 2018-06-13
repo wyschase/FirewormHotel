@@ -25,7 +25,7 @@
         <div class="info">
             <img src="../images/登录.png" alt="登录">
         </div>
-        <form action="#">
+        <form action="login.php" method="post">
             <div class="form-group">
                 <p>
                     <input type="text" placeholder="用户名" class="form-input-user" name="username">
@@ -38,7 +38,9 @@
 
 
             <input type="id-code" placeholder="验证码" class="form-input-id-code" name="id-code">
-            <div class="id-code-area"></div>
+            <div class="id-code-area">
+                <img  src="image.php" width="200px" height="60px" id = "refresh" title="刷新验证码" align="absmiddle" onclick="document.getElementById('refresh').src='image.php' ">
+            </div>
             <div class="btn">
                 <input type="submit" value="登&nbsp;&nbsp;录" class="form-btn">
             </div>
