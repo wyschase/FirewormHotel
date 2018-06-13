@@ -33,6 +33,7 @@ this.imagePreview = function () {
                     width: '640px'
                 }, 500))
                 .css("position", "absolute")
+                .css("z-index", "999")
                 .css("top", (e.pageY + yOffset) + "px")
                 .css("left", (e.pageX + xOffset) + "px");
         }
