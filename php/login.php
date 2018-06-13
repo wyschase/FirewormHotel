@@ -1,12 +1,12 @@
 <?php
 session_start();
 if(!isset($_SESSION['user_id'])){
-	$con = mysql_connect("localhost","root","password") or die('Cloud not connect:'.mysql_error());
-	mysql_select_db("test",$con);
+	$con = mysqli_connect("localhost","root","") or die('Cloud not connect:'.mysqli_error());
+	mysqli_select_db($con,"test");
 	$un = $_POST['username'];
 	$pwd = $_POST['password'];
-	$result=mysql_query("SELECT * from user where username=$un");
-	$row = mysql_fetch_array($result);
+	$result=mysqli_query($con,"SELECT * from user where username=$un");
+	$row = mysqli_fetch_array($result);
 	if($row) {
 		if($row['password'] == $pwd) {
 			$_SESSION['username']=$un;
