@@ -9,41 +9,18 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="../js/hotelDetail.js"></script>
     <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-    <script>
-        $(function() {
-            $( "#from" ).datepicker({
-                defaultDate: "+1w",
-                changeMonth: true,
-                numberOfMonths: 3,
-                onClose: function( selectedDate ) {
-                    $( "#to" ).datepicker( "option", "minDate", selectedDate );
-                }
-            });
-            $( "#to" ).datepicker({
-                defaultDate: "+1w",
-                changeMonth: true,
-                numberOfMonths: 3,
-                onClose: function( selectedDate ) {
-                    $( "#from" ).datepicker( "option", "maxDate", selectedDate );
-                }
-            });
-        });
-    </script>
 </head>
 <body>
-<div class="header">
-    <div class="header-left">
-        <div>
-            <a href="index.html"><img src="../images/logo-2.png"></a>
-        </div>
+<div class="search-header">
+    <a href="index.html"><img class="logo" src="../images/logo-3.png"></a>
+    <div class="search-box box">
+        <input type="text" placeholder="广州">
     </div>
-
-    <div class="header-right">
-        <span><a href="login.html">登录&nbsp;</a></span>
-        <span><a href="signup.html">注册</a></span>
-    </div>
-</div><!--header结束-->
+    <a id="text-register" href="signup.html" class="register">注册</a>
+    <a id="text-login" href="login.html" class="login">登录</a>
+</div>
 <div class="hotelDetail-nav">
     <div class="nav">
         <span class="nav-margin"><a href="index.html">首页</a></span>

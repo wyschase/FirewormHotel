@@ -28,4 +28,3 @@ imagestring($img_handle, 28, 10, 0, $str, $txt_color);//水平填充一行字符
 ob_clean();   // ob_clean()清空输出缓存区
 header("Content-type: image/png"); //生成验证码图片
 imagepng($img_handle);//显示图片
-?>
