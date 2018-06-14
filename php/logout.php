@@ -13,5 +13,5 @@ if(isset($_SESSION['username'])){
     session_destroy();
 }
 //location首部使浏览器重定向到另一个页面
-$home_url = '../html/login.html';
+$home_url = '../html/index.html';
 header('Location:'.$home_url);

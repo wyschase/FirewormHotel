@@ -1,4 +1,7 @@
 <?php
 session_start();
-$name = $_SESSION['username'];
-echo $name;
+if (isset($_SESSION['username'])) {
+    echo $_SESSION['username'];
+}else{
+    echo "";
+}

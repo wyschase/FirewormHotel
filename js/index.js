@@ -9,8 +9,9 @@ $(function () {
         },
         function (data, status) {
             if(data!=""){
-                document.getElementById("text-login").innerHTML=data;
-                document.getElementById("text-register").innerHTML="注销";
+                $("#text-login").html(data);
+                $("#text-register").html("注销");
+                $("#text-register").attr("href","../php/logout.php");
             }
         });
 
