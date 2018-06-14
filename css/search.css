@@ -155,7 +155,7 @@ html, body {
     -moz-border-radius: 5px;
 }
 
-.search-result .text-hotel .service{
+.search-result .text-hotel .service {
     font-size: 20px;
     color: #999999;
 }
@@ -180,7 +180,6 @@ html, body {
 
 .search-result .text-hotel .service .p3 {
     margin-top: 20px;
-    margin-right: 20px;
     float: right;
     padding-left: 24px;
     font-size: 18px;
@@ -194,11 +193,11 @@ html, body {
 
 .search-result .text-hotel .detail {
     float: right;
+    text-decoration: none;
     display: block;
     width: 100px;
     height: 40px;
     margin-top: 10px;
-    margin-right: 20px;
     line-height: 40px;
     text-align: center;
     border: 2px #52919f solid;
@@ -207,4 +206,45 @@ html, body {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+}
+
+#map-container {
+    float: right;
+    margin-top: 130px;
+    width: 280px;
+    height: 500px;
+}
+
+.search-result .text-hotel .dis-add {
+    float: left;
+}
+
+.search-result .text-hotel .grade {
+    width: 104px;
+    float: right;
+    margin-top: 15px;
+}
+
+.search-result .text-hotel .name{
+    height: 26px;
+}
+
+.search-result .text-hotel .grade img {
+    width: 104px;
+    height: 19px;
+    margin-bottom: 10px;
+}
+
+.search-result .text-hotel .grade p {
+    display: block;
+    float: right;
+    color: #9ad7c5;
+    font-size: 24px;
+}
+
+.search-result .text-hotel .grade span {
+    color: #666666;
+    font-size: 18px;
+    float: right;
+    margin-top: 5px;
 }
