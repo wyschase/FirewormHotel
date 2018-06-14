@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/common.css" type="text/css">
     <link rel="stylesheet" href="../css/search.css" type="text/css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=iaGdckgtx65mKaEVsl3XVeyVzpE7SPKn"></script>
     <script src="../js/search.js"></script>
 </head>
 <body>
@@ -74,6 +76,7 @@
 </div>
 <div class="search-result">
     <div class="box">
+        <div id="map-container"></div>
         <div class="sum">
             共为您查到&nbsp;<span>201</span>&nbsp;家酒店
         </div>
@@ -88,55 +91,106 @@
         <div class="display-hotel">
             <img src="../images/gz01.jpg">
             <div class="text-hotel">
-                <span class="name">
+                <div class="name">
                     <img class="mark" src="../images/Pin-location1.png">
                     <p>莹家广州南沙店</p>
-                </span>
-                <p class="address clearFloat">地址：珠电路8号</p>
-                <p class="distance">距市中心47.2km</p>
+                </div>
+                <p></p>
+                <div class="hotel-info">
+                    <div class="dis-add">
+                        <p class="address clearFloat">地址：珠电路8号</p>
+                        <p class="distance">距市中心47.2km</p>
+                    </div>
+                    <div class="grade">
+                        <img src="../images/star-45.png">
+                        <p>4.9<span>/5分</span></p>
+                    </div>
+                </div>
                 <p class="type">经济型</p>
                 <span class="service">
                     <p class="p1">WiFi</p>
                     <p class="p2">餐厅</p>
                     <p class="p3">￥<strong>136</strong>起</p>
                 </span>
-                <p class="detail clearFloat">查看详情</p>
+                <a href="hotelDetail.html" class="detail clearFloat">查看详情</a>
             </div>
         </div>
         <div class="display-hotel">
             <img src="../images/gz02.jpg">
             <div class="text-hotel">
-                <span class="name">
+                <div class="name">
                     <img class="mark" src="../images/Pin-location2.png">
                     <p>莹家广州番禺长隆北门店</p>
-                </span>
-                <p class="address clearFloat">地址：大石镇河村村南大路275号</p>
-                <p class="distance">距市中心14.6km</p>
+                </div>
+                <div class="hotel-info">
+                    <div class="dis-add">
+                        <p class="address clearFloat">地址：大石镇河村村南大路275号</p>
+                        <p class="distance">距市中心14.6km</p>
+                    </div>
+                    <div class="grade">
+                        <img src="../images/star-45.png">
+                        <p>4.7<span>/5分</span></p>
+                    </div>
+                </div>
                 <p class="type">舒适型</p>
                 <span class="service">
                     <p class="p1">WiFi</p>
                     <p class="p2">餐厅</p>
                     <p class="p3">￥<strong>115</strong>起</p>
                 </span>
-                <p class="detail clearFloat">查看详情</p>
+                <a href="hotelDetail.html" class="detail clearFloat">查看详情</a>
             </div>
         </div>
         <div class="display-hotel">
             <img src="../images/gz03.jpg">
             <div class="text-hotel">
-                <span class="name">
+                <div class="name">
                     <img class="mark" src="../images/Pin-location3.png">
                     <p>莹家广州天河沙河服装城店</p>
-                </span>
-                <p class="address clearFloat">地址：广园东路1933号-1035号</p>
-                <p class="distance">距市中心6.1km</p>
+                </div>
+                <div class="hotel-info">
+                    <div class="dis-add">
+                        <p class="address clearFloat">地址：广园东路1933号-1035号</p>
+                        <p class="distance">距市中心6.1km</p>
+                    </div>
+                    <div class="grade">
+                        <img src="../images/star-45.png">
+                        <p>4.7<span>/5分</span></p>
+                    </div>
+                </div>
                 <p class="type">舒适型</p>
                 <span class="service">
                     <p class="p1">WiFi</p>
                     <p class="p2">餐厅</p>
                     <p class="p3">￥<strong>117</strong>起</p>
                 </span>
-                <p class="detail clearFloat">查看详情</p>
+                <a href="hotelDetail.html" class="detail clearFloat">查看详情</a>
+            </div>
+        </div>
+        <div class="display-hotel">
+            <img src="../images/gz04.jpg">
+            <div class="text-hotel">
+                <div class="name">
+                    <img class="mark" src="../images/Pin-location3.png">
+                    <p>莹家广州天河沙河服装城店</p>
+                </div>
+                <div class="hotel-info">
+                    <div class="dis-add">
+                        <p class="address clearFloat">地址：广园东路1933号-1035号</p>
+                        <p class="distance">距市中心6.1km</p>
+                    </div>
+                    <div class="grade">
+                        <img src="../images/star-45.png">
+                        <p>4.6<span>/5分</span></p>
+                    </div>
+                </div>
+                <p class="type">舒适型</p>
+                <span class="service">
+                    <p class="p1">WiFi</p>
+                    <p class="p2">餐厅</p>
+                    <p class="p3">￥<strong>117</strong>起</p>
+                </span>
+                <a href="hotelDetail.html" class="detail clearFloat">查看详情</a>
             </div>
         </div>
     </div>
