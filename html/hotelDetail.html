@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>莹家 - 广州南沙广场店</title>
+    <link rel="shortcut icon" href="../images/LOGO-label.ico">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/hotelDetail.css" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+    <script>
+        $(function() {
+            $( "#from" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function( selectedDate ) {
+                    $( "#to" ).datepicker( "option", "minDate", selectedDate );
+                }
+            });
+            $( "#to" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function( selectedDate ) {
+                    $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <a href="index.html"><img src="../images/logo-2.png"></a>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <span><a href="login.html">登录&nbsp;</a></span>
+        <span><a href="signup.html">注册</a></span>
+    </div>
+</div><!--header结束-->
+<div class="hotelDetail-nav">
+    <div class="nav">
+        <span class="nav-margin"><a href="index.html">首页</a></span>
+        <span class="nav-margin">&gt;</span>
+        <span class="nav-margin"><a href="index.html">酒店列表</a></span>
+        <span class="nav-margin">&gt;</span>
+        <span class="nav-margin"><a href="hotelDetail.html">莹家广州南沙广场店</a></span>
+   </div>
+</div><!--hotelDetail-nav结束-->
+<div class="detailPic"></div><!--detailPic结束-->
+<div class="hotelInfo">
+    <div class="hotelInfo-left">
+        <p class="hotel-name">莹家广州南沙广场店 <img class="nansha-star" src="../images/nansha-star.png"></p>
+        <p class="hotel-infotext">地址：珠电路8号</p>
+        <p class="hotel-infotext">电话：020-39136666</p>
+        <img src="../images/gz-nansha.png">
+    </div>
+    <div class="hotelInfo-right">
+        <span class="hotel-RMB">¥</span>
+        <span class="hotel-price">117</span>
+        <span class="hotel-RMB">起</span>
+
+    </div>
+
+</div><!--hotelinfo结束-->
+<div class="data"><label for="from" >入住时间&nbsp;&nbsp;&nbsp;   </label>
+
+    <input type="text" id="from" name="from" class="data-margin">
+    <label for="to" class="data-text">退房时间&nbsp;&nbsp;&nbsp;   </label>
+    <input type="text" id="to" name="to">
+
+        <input type="button" class="data-btn"value="确认"></input>
+
+</div>
+<!--data结束-->
+<div class="room-detail">
+    <li>
+    <div class="room-detail-img">
+        <img src="../images/hoteldetail1-07single.jpg" height="225px" width="300px">
+    </div>
+    <div class="room-detail-word">
+        <p class="room-name">单人房</p>
+        <p class="room-info">床型：标准床</p>
+        <p class="room-info">面积：10-12㎡</p>
+        <p class="room-info">楼层：3-5</p>
+        <p class="room-info">可住人数：1</p>
+    </div>
+        <div class="price-box">
+            <span class="RMB">¥</span>
+            <span class="room-price">117</span>
+        </div>
+        <div >
+            <input type="submit" value="立即预约" class="book-btn">
+        </div>
+    </li>
+
+    <li>
+        <div class="room-detail-img">
+            <img src="../images/hoteldetail1-08double.jpg" height="225px" width="300px">
+        </div>
+        <div class="room-detail-word">
+            <p class="room-name">双人房</p>
+            <p class="room-info">床型：双床</p>
+            <p class="room-info">面积：15-20㎡</p>
+            <p class="room-info">楼层：3-5</p>
+            <p class="room-info">可住人数：2</p>
+        </div>
+        <div class="price-box">
+            <span class="RMB">¥</span>
+            <span class="room-price">168</span>
+        </div>
+        <div >
+            <input type="submit" value="立即预约" class="book-btn">
+        </div>
+    </li>
+
+    <li>
+        <div class="room-detail-img">
+            <img src="../images/hoteldetail1-09large.jpg" height="225px" width="300px">
+        </div>
+        <div class="room-detail-word">
+            <p class="room-name">大床房</p>
+            <p class="room-info">床型：大床</p>
+            <p class="room-info">面积：15-20㎡</p>
+            <p class="room-info">楼层：3-5</p>
+            <p class="room-info">可住人数：2</p>
+        </div>
+        <div class="price-box">
+            <span class="RMB">¥</span>
+            <span class="room-price">199</span>
+        </div>
+        <div >
+            <input type="submit" value="立即预约" class="book-btn">
+        </div>
+    </li>
+
+    <li>
+        <div class="room-detail-img">
+            <img src="../images/hoteldetail1-10luxury.jpg" height="225px" width="300px">
+        </div>
+        <div class="room-detail-word">
+            <p class="room-name">豪华套房</p>
+            <p class="room-info">床型：大床</p>
+            <p class="room-info">面积：18-22㎡</p>
+            <p class="room-info">楼层：3-5</p>
+            <p class="room-info">可住人数：2</p>
+        </div>
+        <div class="price-box">
+            <span class="RMB">¥</span>
+            <span class="room-price">231</span>
+        </div>
+        <div >
+            <input type="submit" value="立即预约" class="book-btn">
+        </div>
+    </li>
+</div><!--room-detail结束-->
+<div class="public-footer">
+    <div class="footer-content box">
+        <ul>
+            <li><a href="">关于我们&nbsp;|&nbsp;</a></li>
+            <li><a href="">联系我们&nbsp;|&nbsp;</a></li>
+            <li><a href="">意见反馈&nbsp;|&nbsp;</a></li>
+            <li><a href="">营业执照&nbsp;|&nbsp;</a></li>
+            <li><a href="">会员中心&nbsp;|&nbsp;</a></li>
+            <li><a href="">指南</a></li>
+        </ul>
+        <br>
+        <p>© 2018 莹家酒店 yingjia.com 版权所有</p>
+    </div>
+</div>
+</body>
+</html>
