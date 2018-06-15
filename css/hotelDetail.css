@@ -20,7 +20,6 @@ html, body {
     margin: 15px 40px;
 }
 
-
 .header-right {
     width: 200px;
     height: 80px;
@@ -40,15 +39,14 @@ html, body {
     /*margin-right: 40px;*/
 }
 
-
-.hotelDetail-nav{
-    witdh:100%;
+.hotelDetail-nav {
+    witdh: 100%;
     height: 50px;
     background-color: #ffffff;
 
 }
 
-.nav{
+.nav {
 
     font-family: 微软雅黑;
     font-size: 18px;
@@ -56,19 +54,20 @@ html, body {
     margin-top: 16px;
     margin-left: 430px;
 }
-.nav-margin{
+
+.nav-margin {
     margin-right: 15px;
     color: #666666;
 }
-.detailPic{
+
+.detailPic {
     width: 100%;
     height: 570px;
     background-image: url("../images/nansha-background.png");
 
-
 }
 
-.hotelInfo{
+.hotelInfo {
     width: 1060px;
     height: 249px;
     margin: 0 430px;
@@ -77,45 +76,50 @@ html, body {
     padding-top: 30px;
 }
 
-.hotelInfo-left{
+.hotelInfo-left {
     width: 800px;
     float: left;
 }
-.hotelInfo-left p{
+
+.hotelInfo-left p {
     margin-bottom: 20px;
 }
-.hotel-name{
+
+.hotel-name {
     font-family: 微软雅黑;
-    font-size:36px ;
+    font-size: 36px;
     color: #333333;
-    font-weight:bolder;
+    font-weight: bolder;
 }
-.hotel-infotext{
+
+.hotel-infotext {
     font-family: 微软雅黑;
-    font-size:20px ;
+    font-size: 20px;
     color: #666666;
 
-
 }
-.hotelInfo-right{
-    width:120px;
+
+.hotelInfo-right {
+    width: 120px;
     padding-top: 35px;
     float: right;
 }
-.hotel-RMB{
+
+.hotel-RMB {
     color: #666666;
     font-family: 微软雅黑;
     font-size: 24px;
     text-align: right;
 }
-.hotel-price{
+
+.hotel-price {
     font-family: 微软雅黑;
     font-size: 36px;
     color: #eb6100;
     text-align: right;
 }
 
-.data{
+.data {
     width: 1060px;
     height: 42px;
     margin: 0 430px;
@@ -127,11 +131,12 @@ html, body {
     padding-top: 8px;
 
 }
-.data-margin{
+
+.data-margin {
     margin-right: 60px;
 }
 
-.data-btn{
+.data-btn {
     color: #FFFFFF;
     width: 80px;
     height: 34px;
@@ -142,62 +147,69 @@ html, body {
     border-radius: 5px;
     margin-left: 40px;
 
-
 }
-.room-detail{
+
+.room-detail {
     width: 1060px;
     margin: 0 430px;
 
 }
 
-.room-detail li{
+.room-detail li {
     float: left;
     width: 1060px;
     padding: 29px 0;
-    border-bottom: 2px solid  #f6f6f6;;
+    border-bottom: 2px solid #f6f6f6;;
 }
-.room-detail-img{
+
+.room-detail-img {
     margin-right: 40px;
     float: left;
 }
-.room-detail-word{
-    width:413px;
+
+.room-detail-word {
+    width: 413px;
     float: left;
 }
 
-.room-name{
+.room-name {
     font-family: 微软雅黑;
     font-size: 24px;
     color: #333333;
 }
 
-.room-info{
+.room-info {
     font-family: 微软雅黑;
     font-size: 20px;
     color: #666666;
-    margin-top:20px;
+    margin-top: 20px;
 
 }
-.price-box{
+
+.price-box {
     float: left;
-    marigin-right:140px;
+    marigin-right: 140px;
 }
-.room-price{
+
+.room-price {
     font-family: 微软雅黑;
     font-size: 26px;
     color: #eb6100;
 
 }
-.RMB{
+
+.RMB {
     font-family: 微软雅黑;
     font-size: 18px;
     color: #666666;
 
 }
 
-.book-btn{
+.book-btn {
+    display: block;
     height: 40px;
     width: 100px;
+    line-height: 40px;
     color: #FFFFFF;
     text-align: center;
     background-color: #9ad8c4;
