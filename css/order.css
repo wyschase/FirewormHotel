@@ -1,0 +1,113 @@
+.status{
+    width: 100%;
+    height: 62px;
+    padding-left: 420px;
+}
+
+.oder-hotel-name{
+    font-family: 微软雅黑;
+    font-size: 24px;
+    color: #333333;
+    padding-left:430px ;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.order-box{
+    height: 400px;
+    width: 1060px;
+    border: solid 2px #f6f6f6;
+    margin-left: 430px;
+}
+
+.order-box1{
+    height: 266px;
+    border-bottom: solid 2px #D6D6D6;
+}
+
+.order-box1-left{
+    width: 120px;
+    height: 266px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
+
+.order-box1-right{
+    width: 900px;
+    height: 266px;
+    background-color: #f6f6f6;
+
+}
+.order-box1-right p{
+     margin-top: 22px;
+     margin-left: 20px;
+     font-family: 微软雅黑;
+     font-size: 18px;
+     color: #333333;
+ }
+.order-box2-right p{
+    margin-top: 22px;
+    margin-left: 20px;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #333333;
+}
+
+.box-right-left{
+    margin-right: 47px;
+}
+box-right-right{
+
+}
+
+.right-btn{
+    background-color: #9ad7c5;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 5px;
+
+
+}
+.order-box2{
+    height: 132px;
+
+}
+
+.order-box2-left{
+    width: 118px;
+    height: 132px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
+
+.order-box2-right{
+    width: 900px;
+    height: 132px;
+    background-color: #f6f6f6;
+    float: right;
+}
+.order-button{
+    width: 100%;
+    height: 127px;
+    margin-top: 45px ;
+    margin-left: 870px;
+}
+
+.order-button2{
+    background-color: #52919f;
+    border: none;
+    width: 180px;
+    height: 35px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
