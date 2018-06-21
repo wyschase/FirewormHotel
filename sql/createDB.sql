@@ -157,18 +157,21 @@ INSERT INTO `comment` (`cm_id`, `h_id`, `cm_grade`, `u_id`, `content`) VALUES
 -- 创建入住人员表
 CREATE TABLE IF NOT EXISTS `guest` (
   `id_card_num` char(18)        NOT NULL UNIQUE,
+  `rm_id`       int(11)         NOT NULL,
   `g_name`      varchar(5)      NOT NULL,
   `g_sex`       enum ('男', '女') NOT NULL,
   `g_tel`       varchar(15)     NOT NULL,
-  PRIMARY KEY (`id_card_num`)
+  PRIMARY KEY (`id_card_num`),
+  foreign key (`rm_id`) references `room` (`rm_id`)
+    ON DELETE CASCADE
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
 
 -- 插入入住人员表
-INSERT INTO `guest` (`id_card_num`, `g_name`, `g_sex`, `g_tel`) VALUES
-  ('442222199801010001', '王源盛', '男', '13282891389'),
-  ('442222199801010002', '王小源', '男', '13282893389');
+INSERT INTO `guest` (`id_card_num`, `rm_id`, `g_name`, `g_sex`, `g_tel`) VALUES
+  ('442222199801010001', 101, '王源盛', '男', '13282891389'),
+  ('442222199801010002', 102, '王小源', '男', '13282893389');
 
 -- 创建订单表
 CREATE TABLE IF NOT EXISTS `order` (
@@ -192,7 +195,8 @@ CREATE TABLE IF NOT EXISTS `order` (
 -- 插入订单表
 INSERT INTO `order` (`o_id`, `u_id`, `h_id`, `rm_id`, `o_create_time`, `payment`, `e_ch_in_time`, `ch_in_time`, `ch_out_time`)
 VALUES
-  (1, 1, 1, 101, 1529422977, 200, 1529432977, 1529442977, 1529522977);
+  (1, 1, 1, 101, 1529422977, 200, 1529432977, 1529442977, 1529522977),
+  (2, 2, 1, 103, 1529422977, 200, 1529432977, 1529442977, 1529522977);
 
 -- 创建订单-服务联系表
 CREATE TABLE IF NOT EXISTS `order_service` (
@@ -222,7 +226,8 @@ CREATE TABLE IF NOT EXISTS `order_guest` (
 
 -- 插入订单-入住人员联系表
 INSERT INTO `order_guest` (`o_id`, `id_card_num`) values
-  (1, '442222199801010001');
+  (1, '442222199801010001'),
+  (2,'442222199801010002');
 
 -- 创建图片表
 CREATE TABLE IF NOT EXISTS `img` (
