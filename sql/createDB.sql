@@ -157,7 +157,7 @@ INSERT INTO `comment` (`cm_id`, `h_id`, `cm_grade`, `u_id`, `content`) VALUES
 -- 创建入住人员表
 CREATE TABLE IF NOT EXISTS `guest` (
   `id_card_num` char(18)        NOT NULL UNIQUE,
-  `rm_id`       int(11)         NOT NULL,
+  `rm_id`       int(11),
   `g_name`      varchar(5)      NOT NULL,
   `g_sex`       enum ('男', '女') NOT NULL,
   `g_tel`       varchar(15)     NOT NULL,
