@@ -5,13 +5,12 @@ $(function () {
 
     // 登录名-session
     $.post("../php/session.php",
-        {
-        },
+        {},
         function (data, status) {
-            if(data!=""){
+            if (data != "") {
                 $("#text-login").html(data);
                 $("#text-register").html("注销");
-                $("#text-register").attr("href","../php/logout.php");
+                $("#text-register").attr("href", "../php/logout.php");
             }
         });
 
@@ -21,11 +20,18 @@ $(function () {
         function () {
             $(".sub-title li .city-active").removeClass("city-active");
             $(this).addClass("city-active");
+            $("#img01").attr("src", "../images/gz0" + (Math.floor(Math.random() * 6) + 1) + ".jpg");
+            $("#img02").attr("src", "../images/gz0" + (Math.floor(Math.random() * 6) + 1) + ".jpg");
+            $("#img03").attr("src", "../images/gz0" + (Math.floor(Math.random() * 6) + 1) + ".jpg");
+            $("#img04").attr("src", "../images/gz0" + (Math.floor(Math.random() * 6) + 1) + ".jpg");
+            $("#img05").attr("src", "../images/gz0" + (Math.floor(Math.random() * 6) + 1) + ".jpg");
+            $("#img06").attr("src", "../images/gz0" + (Math.floor(Math.random() * 6) + 1) + ".jpg");
         },
         function () {
             // 鼠标离开
         }
     );
+
 
 
     imagePreview();

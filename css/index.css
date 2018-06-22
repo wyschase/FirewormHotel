@@ -30,7 +30,7 @@ html, body, .index-header {
     height: 100%;
 }
 
-.index-header-banner .pic{
+.index-header-banner .pic {
     position: relative;
     z-index: 0;
 }
@@ -104,24 +104,24 @@ html, body, .index-header {
     color: #ffffff;
 }
 
-.index-display-panel .sub-title{
+.index-display-panel .sub-title {
     margin-bottom: 30px;
     margin-top: 13px;
     border-bottom: 2px solid #9ad7c5;
     margin-right: 18px;
 }
 
-.index-display-panel{
+.index-display-panel {
     margin-top: 80px;
 }
 
-.index-display-panel .hotel-display li{
+.index-display-panel .hotel-display li {
     float: left;
     margin-right: 13px;
     width: 340px;
 }
 
-.index-display-panel .hotel-display .hotel-name{
+.index-display-panel .hotel-display .hotel-name {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -131,13 +131,13 @@ html, body, .index-header {
     white-space: nowrap;
 }
 
-.index-display-panel .hotel-display .hotel-price{
+.index-display-panel .hotel-display .hotel-price {
     font-size: 20px;
     margin-bottom: 55px;
     color: #666666;
 }
 
-.index-display-panel .hotel-display img{
+.index-display-panel .hotel-display img {
     height: 245px;
     width: 330px;
     border-radius: 5px;
@@ -147,18 +147,18 @@ html, body, .index-header {
 
 .index-sub-banner {
     width: 100%;
-    height:800px;
+    height: 800px;
     background-image: url("../images/search01.jpg");
     background-size: cover;
 }
 
-.index-sub-banner-cover{
+.index-sub-banner-cover {
     position: absolute;
     z-index: 100;
     width: 100%;
     height: 800px;
     background: url("../images/cover-black.png") repeat-x;
-    filter:Alpha(opacity=0.4);
+    filter: Alpha(opacity=0.4);
     opacity: 0.4;
 }
 
@@ -169,13 +169,13 @@ html, body, .index-header {
     margin-bottom: 40px;
 }
 
-.index-sub-banner-button a{
+.index-sub-banner-button a {
     width: 220px;
     height: 42px;
     display: inline-block;
     font-size: 20px;
     color: #000000;
-    padding-top:18px ;
+    padding-top: 18px;
     text-align: center;
     background: #9ad7c5;
     border-radius: 5px;
