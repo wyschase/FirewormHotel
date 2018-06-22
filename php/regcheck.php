@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
     } else {
         if ($psw == $psw_confirm) {
             $con = mysqli_connect("localhost", "root", "") or die('Cloud not connect:' . mysqli_error());
-            mysqli_select_db($con, "test");
+            mysqli_select_db($con, "db_hotel");
             $sql = "select username from user where username = '$_POST[username]'"; //SQL语句
             $result = mysqli_query($con, $sql);    //执行SQL语句
             $num = mysqli_num_rows($result); //统计执行结果影响的行数
@@ -32,4 +32,3 @@ if (isset($_POST["submit"])) {
 } else {
     echo "<script>alert('提交未成功！'); history.go(-1);</script>";
 }
-?>

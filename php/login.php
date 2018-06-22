@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['user_id'])){
 	$con = mysqli_connect("localhost","root","") or die('Cloud not connect:'.mysqli_error());
-	mysqli_select_db($con,"test");
+	mysqli_select_db($con,"db_hotel");
 	$un = $_POST['username'];
 	$pwd = $_POST['password'];
 	$result=mysqli_query($con,"SELECT * from user where username=$un");
